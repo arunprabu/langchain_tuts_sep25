@@ -24,7 +24,7 @@ def simple_prompt_template_example():
     
     while True:
         try:
-            topic = input("Topic: ").strip()
+            topic_value = input("Topic: ").strip()
             if topic.lower() == 'exit':
                 break
                 
@@ -32,7 +32,7 @@ def simple_prompt_template_example():
             if style.lower() == 'exit':
                 break
             
-            response = chain.invoke({"topic": topic, "style": style})
+            response = chain.invoke({"topic": topic_value, "style": style})
             print(response.content)
             print()
 

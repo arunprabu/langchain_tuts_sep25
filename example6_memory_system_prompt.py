@@ -17,7 +17,8 @@ def chat_with_memory():
     # Create a system prompt for shorter responses
     system_prompt = PromptTemplate(
         input_variables=["history", "input"],
-        template="""You are a helpful AI assistant. Please keep your responses concise and to the point. 
+        template="""You are a helpful AI assistant. Please keep your 
+        responses concise and to the point. 
         Aim for brief, clear answers without unnecessary elaboration.
 
         Previous conversation:
@@ -46,6 +47,13 @@ def chat_with_memory():
             # Use invoke instead of run for newer LangChain versions
             response = conversation.invoke({"input": user_input})
             print("Assistant:", response['response'])
+            # --- Debug: Print the memory buffer here ---
+            print('--- Conversation History ---')
+            print(memory.buffer)  # For plain string history
+            # or, for formatted variable history:
+            print(memory.load_memory_variables({})["history"])
+            print('----------------------------')
+
 
         except Exception as e:
             print("Oops! Something went wrong:", e)
@@ -53,3 +61,17 @@ def chat_with_memory():
 if __name__ == "__main__":
     chat_with_memory()
 
+
+"""
+    Here's the Prompt to test this
+
+    You: I watched interstellar recently
+    Assistant: 
+
+    You: list down most popular programming languages
+    Assistant: 
+
+    You: what movie i watched?
+    Assistant: Interstellar
+
+"""

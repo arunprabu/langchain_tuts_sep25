@@ -35,15 +35,17 @@
 3. Prompt templates [DONE]
 4. Example selectors
 5. LLMs [DONE]
-6. Output parsers [TODO]
+6. Output parsers [DONE]
 7. Document loaders
 8. Text splitters
 9. Embedding models
 10. Vector stores
 11. Retrievers 
-12. Tools
+12. Tools [TODO]
 13. Agents [TODO]
 14. Multimodal
 15. Indexing 
 
 
+### FREEZE THE DEPENDENCIES WITH requirements.txt
+`./.venv/bin/python -m pip freeze > requirements.txt`
