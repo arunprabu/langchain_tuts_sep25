@@ -1,3 +1,10 @@
+.env
+.env.local
+.env.dev 
+.env.test 
+.env.staging
+.env.prod
+
 # IDE and Editor files
 .vscode/
 .idea/

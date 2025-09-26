@@ -47,10 +47,6 @@
 15. Indexing 
 
 
-### FREEZE THE DEPENDENCIES WITH requirements.txt
-`./.venv/bin/python -m pip freeze > requirements.txt`
-
-
 Agents
 ===
   Requirement 

@@ -29,6 +29,10 @@ Verify whether you have pip. execute the following command in terminal.
 `pip install openai`
 `pip install langchain-openai`
 
+
+### FREEZE THE DEPENDENCIES WITH requirements.txt
+./.venv/bin/python -m pip freeze > requirements.txt
+
 ## Let's try langchain example with out api key
 
 
