@@ -17,7 +17,7 @@
 ## LangChain 
 ===
 
-### Core Building Clocks of AI agents
+### Core Building Blocks of AI agents
 ---
   1. LLM with Reasoning Capability / LLM tuned for AI Agents
   2. Prompts  (preferred: ReAct)
@@ -49,3 +49,20 @@
 
 ### FREEZE THE DEPENDENCIES WITH requirements.txt
 `./.venv/bin/python -m pip freeze > requirements.txt`
+
+
+Agents
+===
+  Requirement 
+    * our agent listens to users queries related to weather and answers 
+    * should we address queries outside the original scope? no 
+
+Tools 
+===
+  * simple function that does something 
+  * must have name and description [this needs to have clarity] properties 
+  * must return value
+  * description is a prompt for the tool 
+  * function arguments are optional
+
+

@@ -14,7 +14,7 @@ Verify whether you have pip. execute the following command in terminal.
 `import os 
 
 # Load environment variables from .env file (just for example)
-`pip install dotenv or pip3 install dotenv`
+`pip install python-dotenv or pip3 install python-dotenv`
 
 `
   from dotenv import load_dotenv 

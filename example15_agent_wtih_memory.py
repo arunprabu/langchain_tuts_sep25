@@ -3,7 +3,7 @@ from langchain.agents import create_openai_functions_agent, AgentExecutor
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_core.chat_history import InMemoryChatMessageHistory
 from langchain_core.runnables.history import RunnableWithMessageHistory
-from langchain.tools import tool
+from langchain.tools import tool # tool decorator
 from dotenv import load_dotenv
 load_dotenv()
 
