@@ -62,3 +62,48 @@ Tools
   * function arguments are optional
 
 
+
+Types of AI Agents
+--
+  1. Autonomous 
+  2. Semi-Autonomous
+
+
+Factors to consider when we build AI Agents
+---
+  1. Does the model have reasoning capability?
+  2. Can the model perform the tool calls / function calls
+  3. Context window 
+
+
+====
+2 Approaches 
+---
+  Single Agent with many tools 
+    1. get_user_location
+    2. get_date
+    3. get_weather
+    4. get_weather_forecast
+    5. book_turf 
+    6. make_payment
+    7. send_notification_for_otp
+    8. get_otp 
+    9. send_booking_confirmation
+  Many tiny agents with individual tools 
+    1. userInfoCollector agent 
+        1. get_user_location
+        2. get_date
+        3. get_weather
+        4. get_weather_forecast
+
+    2. bookingAgent 
+        1. book_turf 
+        2. make_payment
+        3. get_otp 
+
+    3. NotifierAgent 
+        1. send_notification_for_otp
+        2. send_booking_confirmation
+
+
+
